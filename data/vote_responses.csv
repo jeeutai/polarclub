@@ -1,0 +1,4 @@
+﻿id,vote_id,username,selected_option,response_date,comment,option,timestamp
+1,1,student1,컴퓨터실,2025-06-21 17:00:00,,,
+2,1,student2,도서관,2025-06-21 17:30:00,,,
+3,2,teacher1,과자,2025-06-22 09:00:00,,,

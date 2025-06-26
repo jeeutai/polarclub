@@ -1,0 +1,4 @@
+﻿id,assignment_id,username,content,file_path,submitted_date,grade,feedback,status,reviewed_by
+1,1,student1,Python 기초 학습 완료,,2025-06-21 15:00:00,85,잘했습니다!,완료,teacher1
+2,1,student2,과제 제출합니다,,2025-06-22 10:00:00,90,우수한 과제입니다.,완료,teacher1
+3,1,teacher1,AI 창의 프로젝트,,2025-06-23 09:00:00,95,매우 창의적입니다!,완료,admin

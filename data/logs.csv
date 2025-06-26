@@ -1,0 +1,4 @@
+﻿id,timestamp,username,user_name,user_role,club_name,ip_address,session_id,activity_type,activity_description,target_resource,action_result,error_message,user_agent,device_type,browser_info,request_method,response_time,data_modified,security_level,notes
+1,2025-01-23 07:30:00.000000,조성우,조성우,선생님,시스템,127.0.0.1,session_001,Authentication,Login attempt - Success,Login System,Success,None,Streamlit App,Desktop,Browser Detection N/A,POST,15.23ms,None,Normal,User login successful
+2,2025-01-23 07:31:00.000000,강서준,강서준,총무,코딩,127.0.0.1,session_002,Data Access,View posts,posts,Success,None,Streamlit App,Desktop,Browser Detection N/A,GET,8.45ms,None,Normal,None
+3,2025-01-23 07:32:00.000000,조성우,조성우,선생님,시스템,127.0.0.1,session_003,Admin Action,System initialization,System,Success,None,Streamlit App,Desktop,Browser Detection N/A,POST,22.67ms,1 records,High,System initialization complete

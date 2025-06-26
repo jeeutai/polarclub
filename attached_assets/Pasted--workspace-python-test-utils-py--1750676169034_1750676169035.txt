@@ -1,0 +1,289 @@
+~/workspace$ python test_utils.py
+🧪 종합 테스트 시스템 시작
+이 테스트는 모든 파일과 시스템을 검사하여 배포 가능성을 확인합니다.
+
+
+──────────────────────────────────────────────────
+🔍 문법 검사 테스트 중...
+──────────────────────────────────────────────────
+
+📝 모든 Python 파일 문법 검사 시작...
+✅ ai_assistant.py: 문법 정상
+✅ auth.py: 문법 정상
+✅ backup_system.py: 문법 정상
+✅ board_system.py: 문법 정상
+✅ chat_system.py: 문법 정상
+✅ gallery_system.py: 문법 정상
+✅ report_generator.py: 문법 정상
+✅ schedule_system.py: 문법 정상
+✅ ui_components.py: 문법 정상
+✅ video_conference_system.py: 문법 정상
+✅ vote_system.py: 문법 정상
+✅ portfolio_system.py: 문법 정상
+✅ notification_system.py: 문법 정상
+✅ search_system.py: 문법 정상
+✅ gamification_system.py: 문법 정상
+✅ logging_system.py: 문법 정상
+✅ data_manager.py: 문법 정상
+✅ app.py: 문법 정상
+✅ assignment_system.py: 문법 정상
+✅ enhanced_features.py: 문법 정상
+✅ additional_features.py: 문법 정상
+✅ admin_system.py: 문법 정상
+✅ quiz_system.py: 문법 정상
+✅ initialize_data.py: 문법 정상
+❌ attendance_system.py: 문법 오류 - 줄 1963: invalid syntax
+✅ test_utils.py: 문법 정상
+❌ 문법 검사 테스트 실패
+
+──────────────────────────────────────────────────
+🔍 모듈 임포트 테스트 중...
+──────────────────────────────────────────────────
+🔍 모든 모듈 임포트 테스트 시작...
+✅ auth: 임포트 성공
+✅ data_manager: 임포트 성공
+✅ ui_components: 임포트 성공
+✅ board_system: 임포트 성공
+✅ chat_system: 임포트 성공
+✅ assignment_system: 임포트 성공
+✅ quiz_system: 임포트 성공
+❌ attendance_system: 문법 오류: invalid syntax (attendance_system.py, line 1963)
+✅ schedule_system: 임포트 성공
+✅ report_generator: 임포트 성공
+✅ vote_system: 임포트 성공
+✅ gallery_system: 임포트 성공
+✅ video_conference_system: 임포트 성공
+✅ backup_system: 임포트 성공
+✅ notification_system: 임포트 성공
+✅ search_system: 임포트 성공
+✅ admin_system: 임포트 성공
+✅ ai_assistant: 임포트 성공
+✅ gamification_system: 임포트 성공
+✅ portfolio_system: 임포트 성공
+✅ logging_system: 임포트 성공
+✅ enhanced_features: 임포트 성공
+✅ additional_features: 임포트 성공
+✅ initialize_data: 임포트 성공
+❌ 모듈 임포트 테스트 실패
+
+──────────────────────────────────────────────────
+🔍 외부 의존성 테스트 중...
+──────────────────────────────────────────────────
+
+📦 외부 라이브러리 의존성 테스트 시작...
+✅ pandas: 사용 가능 (DataFrames and data manipulation)
+✅ plotly: 사용 가능 (Interactive charts)
+✅ datetime: 사용 가능 (Date and time handling)
+✅ json: 사용 가능 (JSON data handling)
+✅ os: 사용 가능 (Operating system interface)
+✅ uuid: 사용 가능 (UUID generation)
+✅ 외부 의존성 테스트 완료
+
+──────────────────────────────────────────────────
+🔍 Streamlit 호환성 테스트 중...
+──────────────────────────────────────────────────
+
+🎯 Streamlit 호환성 테스트 시작...
+✅ Streamlit 임포트 성공
+✅ Session state 지원
+✅ st.tabs 사용 가능
+✅ st.columns 사용 가능
+✅ st.form 사용 가능
+✅ st.selectbox 사용 가능
+✅ st.button 사용 가능
+✅ st.text_input 사용 가능
+✅ st.dataframe 사용 가능
+✅ Streamlit 호환성 테스트 완료
+
+──────────────────────────────────────────────────
+🔍 데이터 구조 테스트 중...
+──────────────────────────────────────────────────
+
+🗄️  데이터 구조 무결성 검사 시작...
+ℹ️  users.csv: 추가 컬럼 발견: ['id', 'email', 'phone']
+ℹ️  clubs.csv: 추가 컬럼 발견: ['id', 'status']
+ℹ️  posts.csv: 추가 컬럼 발견: ['tags', 'image_path', 'likes', 'comments_count']
+ℹ️  assignments.csv: 추가 컬럼 발견: ['max_score']
+ℹ️  attendance.csv: 추가 컬럼 발견: ['note', 'attendance_mode', 'timestamp', 'points']
+✅ quizzes.csv: 구조 정상 (0개 레코드)
+✅ schedule.csv: 구조 정상 (0개 레코드)
+❌ notifications.csv: 필수 컬럼 누락: ['username', 'read']
+✅ badges.csv: 구조 정상 (2개 레코드)
+ℹ️  votes.csv: 추가 컬럼 발견: ['is_anonymous', 'status']
+ℹ️  logs.csv: 추가 컬럼 발견: ['user_name', 'user_role', 'club_name', 'ip_address', 'session_id', 'action_result', 'error_message', 'user_agent', 'device_type', 'browser_info', 'request_method', 'response_time', 'data_modified', 'security_level', 'notes']
+✅ 데이터 구조 테스트 완료
+
+──────────────────────────────────────────────────
+🔍 인증 시스템 테스트 중...
+──────────────────────────────────────────────────
+
+🔐 인증 시스템 종합 테스트 시작...
+✅ 유효한 로그인 테스트 성공
+✅ 잘못된 로그인 차단 성공
+✅ 사용자 데이터 구조 정상
+✅ 인증 시스템 테스트 완료
+
+──────────────────────────────────────────────────
+🔍 비즈니스 로직 테스트 중...
+──────────────────────────────────────────────────
+
+🧠 비즈니스 로직 테스트 시작...
+✅ DataManager: 인스턴스 생성 성공
+✅ DataManager: 초기화 메서드 존재
+❌ AttendanceSystem: 인스턴스 생성 오류: invalid syntax (attendance_system.py, line 1963)
+2025-06-23 10:55:46.743 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-06-23 10:55:46.743 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+❌ QuizSystem: 클래스 속성 오류: st.session_state has no attribute "data_manager". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+✅ NotificationSystem: 인스턴스 생성 성공
+✅ NotificationSystem: 초기화 메서드 존재
+❌ 비즈니스 로직 테스트 실패
+
+──────────────────────────────────────────────────
+🔍 배포 준비 테스트 중...
+──────────────────────────────────────────────────
+
+🚀 배포 준비 상태 검사 시작...
+✅ app.py: 존재
+⚠️  requirements.txt: 존재하지 않음
+✅ pyproject.toml: 존재
+✅ 데이터 디렉토리 쓰기 권한 정상
+✅ 데이터 파일 크기 적정
+❌ 배포 준비 테스트 실패
+
+================================================================================
+📋 종합 테스트 보고서
+================================================================================
+
+📊 테스트 요약:
+   전체 테스트 카테고리: 8
+   통과: 5
+   실패: 3
+   심각한 오류: 5
+   경고: 1
+
+🚀 배포 가능 여부: ❌ 불가능
+
+🚨 심각한 오류 (5개):
+   1. attendance_system.py: 줄 1963: invalid syntax
+   2. attendance_system: 문법 오류: invalid syntax (attendance_system.py, line 1963)
+   3. notifications.csv: 필수 컬럼 누락: ['username', 'read']
+   4. AttendanceSystem: 인스턴스 생성 오류: invalid syntax (attendance_system.py, line 1963)
+   5. QuizSystem: 클래스 속성 오류: st.session_state has no attribute "data_manager". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+
+⚠️  경고 사항 (1개):
+   1. requirements.txt이 존재하지 않습니다
+
+📝 상세 테스트 결과:
+
+   SYNTAX:
+     ✅ ai_assistant.py: SYNTAX_OK
+     ✅ auth.py: SYNTAX_OK
+     ✅ backup_system.py: SYNTAX_OK
+     ✅ board_system.py: SYNTAX_OK
+     ✅ chat_system.py: SYNTAX_OK
+     ✅ gallery_system.py: SYNTAX_OK
+     ✅ report_generator.py: SYNTAX_OK
+     ✅ schedule_system.py: SYNTAX_OK
+     ✅ ui_components.py: SYNTAX_OK
+     ✅ video_conference_system.py: SYNTAX_OK
+     ✅ vote_system.py: SYNTAX_OK
+     ✅ portfolio_system.py: SYNTAX_OK
+     ✅ notification_system.py: SYNTAX_OK
+     ✅ search_system.py: SYNTAX_OK
+     ✅ gamification_system.py: SYNTAX_OK
+     ✅ logging_system.py: SYNTAX_OK
+     ✅ data_manager.py: SYNTAX_OK
+     ✅ app.py: SYNTAX_OK
+     ✅ assignment_system.py: SYNTAX_OK
+     ✅ enhanced_features.py: SYNTAX_OK
+     ✅ additional_features.py: SYNTAX_OK
+     ✅ admin_system.py: SYNTAX_OK
+     ✅ quiz_system.py: SYNTAX_OK
+     ✅ initialize_data.py: SYNTAX_OK
+     ❌ attendance_system.py: SYNTAX_ERROR: 줄 1963: invalid syntax
+     ✅ test_utils.py: SYNTAX_OK
+
+   IMPORTS:
+     ✅ auth: SUCCESS
+     ✅ data_manager: SUCCESS
+     ✅ ui_components: SUCCESS
+     ✅ board_system: SUCCESS
+     ✅ chat_system: SUCCESS
+     ✅ assignment_system: SUCCESS
+     ✅ quiz_system: SUCCESS
+     ❌ attendance_system: SYNTAX_ERROR: 문법 오류: invalid syntax (attendance_system.py, line 1963)
+     ✅ schedule_system: SUCCESS
+     ✅ report_generator: SUCCESS
+     ✅ vote_system: SUCCESS
+     ✅ gallery_system: SUCCESS
+     ✅ video_conference_system: SUCCESS
+     ✅ backup_system: SUCCESS
+     ✅ notification_system: SUCCESS
+     ✅ search_system: SUCCESS
+     ✅ admin_system: SUCCESS
+     ✅ ai_assistant: SUCCESS
+     ✅ gamification_system: SUCCESS
+     ✅ portfolio_system: SUCCESS
+     ✅ logging_system: SUCCESS
+     ✅ enhanced_features: SUCCESS
+     ✅ additional_features: SUCCESS
+     ✅ initialize_data: SUCCESS
+
+   DEPENDENCIES:
+     ✅ pandas: AVAILABLE
+     ✅ plotly: AVAILABLE
+     ✅ datetime: AVAILABLE
+     ✅ json: AVAILABLE
+     ✅ os: AVAILABLE
+     ✅ uuid: AVAILABLE
+
+   STREAMLIT:
+     ✅ import: SUCCESS
+     ✅ session_state: SUPPORTED
+     ✅ tabs: AVAILABLE
+     ✅ columns: AVAILABLE
+     ✅ form: AVAILABLE
+     ✅ selectbox: AVAILABLE
+     ✅ button: AVAILABLE
+     ✅ text_input: AVAILABLE
+     ✅ dataframe: AVAILABLE
+
+   DATA_INTEGRITY:
+     ✅ users.csv: EXTRA_COLUMNS: ['id', 'email', 'phone']
+     ✅ clubs.csv: EXTRA_COLUMNS: ['id', 'status']
+     ✅ posts.csv: EXTRA_COLUMNS: ['tags', 'image_path', 'likes', 'comments_count']
+     ✅ assignments.csv: EXTRA_COLUMNS: ['max_score']
+     ✅ attendance.csv: EXTRA_COLUMNS: ['note', 'attendance_mode', 'timestamp', 'points']
+     ✅ quizzes.csv: OK: 0 records
+     ✅ schedule.csv: OK: 0 records
+     ✅ notifications.csv: MISSING_COLUMNS: ['username', 'read']
+     ✅ badges.csv: OK: 2 records
+     ✅ votes.csv: EXTRA_COLUMNS: ['is_anonymous', 'status']
+     ✅ logs.csv: EXTRA_COLUMNS: ['user_name', 'user_role', 'club_name', 'ip_address', 'session_id', 'action_result', 'error_message', 'user_agent', 'device_type', 'browser_info', 'request_method', 'response_time', 'data_modified', 'security_level', 'notes']
+
+   AUTHENTICATION:
+     ✅ valid_login: SUCCESS
+     ✅ invalid_login: BLOCKED
+     ✅ user_structure: VALID
+
+   BUSINESS_LOGIC:
+     ✅ DataManager: INSTANTIATED
+     ❌ AttendanceSystem: INSTANTIATION_ERROR: 인스턴스 생성 오류: invalid syntax (attendance_system.py, line 1963)
+     ❌ QuizSystem: ATTRIBUTE_ERROR: 클래스 속성 오류: st.session_state has no attribute "data_manager". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+     ✅ NotificationSystem: INSTANTIATED
+
+   DEPLOYMENT:
+     ✅ app.py: EXISTS
+     ✅ requirements.txt: MISSING
+     ✅ pyproject.toml: EXISTS
+     ✅ data_write_permission: OK
+     ✅ large_files: OK
+
+💡 수정 권장사항:
+   1. 심각한 오류를 먼저 해결하세요
+   2. 문법 오류와 임포트 오류를 수정하세요
+   3. 누락된 필수 메서드들을 구현하세요
+
+================================================================================
+📁 테스트 보고서가 test_report.json에 저장되었습니다.
+~/workspace$ 
