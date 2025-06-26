@@ -1728,7 +1728,7 @@ class AttendanceSystem:
     def get_weather_emoji(self, date):
         """Get weather emoji for date (random)"""
         import random
-from error_handler import error_handler
+        from error_handler import error_handler
         weather_emojis = ["☀️", "⛅", "🌤️", "🌧️", "❄️"]
         return random.choice(weather_emojis)
 
