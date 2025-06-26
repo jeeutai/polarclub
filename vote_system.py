@@ -7,6 +7,10 @@ from error_handler import ErrorHandler
 import json
 
 class VoteSystem:
+    def error_handler(e):
+        import streamlit as st
+        st.error(f"에러가 발생했어요: {e}")
+
     def __init__(self):
         self.votes_file = 'data/votes.csv'
         self.vote_responses_file = 'data/vote_responses.csv'
